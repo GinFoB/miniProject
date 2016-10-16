@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Employe App</title>
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link href="stylesheets/style.css" rel="stylesheet">
+  <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  
+</head>
+<body>
+
+
+  <div class="navbar navbar-default navbar-static-top" role="navigation" bs-navbar>
+  <div class="navbar-header">
+    <a class="navbar-brand" href="/">
+      <span>Show<strong>Employee</strong></span>
+    </a>
+  </div>
+
+   <ul class="nav navbar-nav">
+    <li data-match-route="/add/employee"><a href="/add/employee">Add New Employee</a></li>
+  </ul>
+
+ 
+  <ul class="nav navbar-nav">
+    <li data-match-route="/d3"><a href="/d3">Statistique</a></li>
+  </ul>
+
+ 
+</div>
+
+
+<div ng-view></div>
+
+
+<script src="javascripts/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="javascripts/bootstrap.min.js"></script>
+<script src="vendor/angular.js"></script>
+<script src="vendor/angular-strap.js"></script>
+<script src="vendor/angular-strap.tpl.js"></script>
+<script src="vendor/angular-messages.js"></script>
+<script src="vendor/angular-resource.js"></script>
+<script src="vendor/angular-route.js"></script>
+<script src="vendor/Chart.min.js"></script>
+<script src="vendor/angular-chart.min.js"></script>
+
+<script src="app.js"></script>
+<script src="controllers/MainCtrl.js"></script>
+<script src="controllers/AddCtrl.js"></script>
+<script src="controllers/EditCtrl.js"></script>
+<script src="controllers/ChartCtrl.js"></script>
+
+</body>
+</html>

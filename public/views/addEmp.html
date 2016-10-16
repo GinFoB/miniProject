@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form>
+                <div class="form-group"> 
+                    <label class="control-label">Name</label>
+                    <input type="text" class="form-control"  ng-model="employee.name">
+                </div>
+
+                <div class="form-group"> 
+                    <label class="control-label">Age</label>
+                    <input type="number" ng-model="employee.age" class="form-control" placeholder="Age is numeric">
+                </div>
+
+                <div class="form-group"> 
+                    <label class="control-label">Nickname</label>
+                    <input type="text" class="form-control" ng-model="employee.nickname">
+                </div>
+                
+
+                <div class="radio">
+                    <label class="control-label">Employe</label>
+                    <input type="checkbox" ng-model="employee.isEmployee" class="form-control">
+                </div>
+
+                <div class="form-group"> 
+                    <label class="control-label">Year</label>
+                    <input type="number" class="form-control" ng-model="employee.year"  placeholder="Year is numeric">
+                </div>
+
+                <div class="form-group"> 
+                    <button type="button" class="btn btn-primary" ng-click="addEmploye(employee)">Submit</button>
+                </div>	
+            </form>
+        </div>
+    </div>
+</div>
+
+ 
